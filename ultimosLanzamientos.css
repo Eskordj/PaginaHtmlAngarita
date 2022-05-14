@@ -1,0 +1,224 @@
+* {
+  color: aliceblue;
+  padding: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  height: 100px;
+  background-color: #050505;
+}
+
+.nombre {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0px 0px 0px 40px;
+}
+
+.nombre a {
+  font-size: 35pt;
+  text-decoration: none;
+}
+
+.nombre img {
+  width: 70px;
+  height: 70px;
+  margin: 5px 0px;
+}
+
+.informacion {
+  display: flex;
+  font-family: Helvetica;
+  width: 50%;
+  margin: 40px 20px;
+  justify-content: right;
+}
+
+ul {
+  list-style: none;
+}
+
+#conoceMas li>a {
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+  margin: 10px 0px;
+  padding: 0px 10px 0px 0px;
+  width: 155px;
+  text-align: center
+}
+
+#conoceMas li>a:hover {
+  color: gray;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+#conoceMas>li {
+  float: left;
+  text-align: center
+}
+
+#conoceMas>li>ul {
+  display: none;
+}
+
+#conoceMas>li:hover>ul {
+  display: block;
+  background-color: #050505;
+  text-align: justify;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #050505;
+}
+
+.tituloFooter {
+  margin: 50px 0px;
+}
+
+.enlaces a {
+  text-decoration: none;
+  margin: 15px 25px;
+}
+
+.enlaces a:hover {
+  color: gray;
+}
+
+.container {
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contenido {
+  padding-top: 100px;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.conteImg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid gray;
+}
+.conteImg img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.conteParrPre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.conteParr a:hover {
+  color: gray;
+}
+.conteImgPre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.conteImgPre img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.conteParr {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conteParr a {
+  margin: 25px 0px;
+  text-decoration: none;
+}
+.conteParr p {
+  display: flex;
+  text-align: justify;
+  color: white;
+  margin: 10px 50px;
+  flex-direction: column;
+}
+.conteParr>p>a:hover {
+  color: gray;
+}
+
+.conteParr audio {
+  margin: 5px 50px;
+}
+@media screen and (max-width: 1200px){
+#header {
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+.nombre {
+  width: 100%;
+  flex-direction: column;
+  padding: 0;
+}
+.nombre a {
+  justify-content: center;
+}
+.informacion {
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  height: 20px;
+}
+#conoceMas li>a {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  width: 100%;
+}
+.contenido {
+  display: flex;
+  flex-direction: column;
+}
+.conteImg {
+  width: 100%;
+  border: none;
+}
+.conteParr {
+  width:100%;
+}
+.conteParr p {
+  margin: 20px 30px;
+}
+.contenido {
+  padding-top: 200px;
+}
+.container {
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.enlaces a {
+  text-decoration: none;
+  margin: 0px 5px;
+}
+}
